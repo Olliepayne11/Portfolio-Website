@@ -7,6 +7,11 @@ import python from '../assets/python-logo.png'
 import csharp from '../assets/csharp-logo.png'
 import sql from '../assets/sql-logo.png'
 
+import react from '../assets/react-logo.png'
+import redux from '../assets/redux-icon.png'
+import jquery from '../assets/jquery-logo.webp'
+import bootstrap from '../assets/bootstrap-logo.png'
+
 export default function Skills() {
     return (
         <section className="skills--section" id="skills">
@@ -14,9 +19,11 @@ export default function Skills() {
                 <p className="section--title">My Skills</p>
             </div>
             <div className="skills--section--container">
+
+                    {/* Languages Below */}
                     <div className="skills--section--card">
                         <div className="skills--section--img">
-                            <img src={html} alt="Product Chain" width="100"/>
+                            <img src={html} alt="Product Chain" width="75"/>
                         </div>
                         <div className="skills--section--card--content">
                             <h3 className="skills--section--title">HTML</h3>
@@ -24,7 +31,7 @@ export default function Skills() {
                     </div>
                     <div className="skills--section--card">
                         <div className="skills--section--img">
-                            <img src={css} alt="Product Chain" width="100"/>
+                            <img src={css} alt="Product Chain" width="75"/>
                         </div>
                         <div className="skills--section--card--content">
                             <h3 className="skills--section--title">CSS</h3>
@@ -32,7 +39,7 @@ export default function Skills() {
                     </div>
                     <div className="skills--section--card">
                         <div className="skills--section--img">
-                            <img src={javascript} alt="Product Chain" width="100"/>
+                            <img src={javascript} alt="Product Chain" width="75"/>
                         </div>
                         <div className="skills--section--card--content">
                             <h3 className="skills--section--title">Javascript</h3>
@@ -40,7 +47,7 @@ export default function Skills() {
                     </div>
                     <div className="skills--section--card">
                         <div className="skills--section--img">
-                            <img src={php} alt="Product Chain" width="100"/>
+                            <img src={php} alt="Product Chain" width="75"/>
                         </div>
                         <div className="skills--section--card--content">
                             <h3 className="skills--section--title">PHP</h3>
@@ -48,7 +55,7 @@ export default function Skills() {
                     </div>
                     <div className="skills--section--card">
                         <div className="skills--section--img">
-                            <img src={java} alt="Product Chain" width="100"/>
+                            <img src={java} alt="Product Chain" width="75"/>
                         </div>
                         <div className="skills--section--card--content">
                             <h3 className="skills--section--title">Java</h3>
@@ -56,7 +63,7 @@ export default function Skills() {
                     </div>
                     <div className="skills--section--card">
                         <div className="skills--section--img">
-                            <img src={python} alt="Product Chain" width="100"/>
+                            <img src={python} alt="Product Chain" width="75"/>
                         </div>
                         <div className="skills--section--card--content">
                             <h3 className="skills--section--title">Python</h3>
@@ -64,7 +71,7 @@ export default function Skills() {
                     </div>
                     <div className="skills--section--card">
                         <div className="skills--section--img">
-                            <img src={csharp} alt="Product Chain" width="100"/>
+                            <img src={csharp} alt="Product Chain" width="75"/>
                         </div>
                         <div className="skills--section--card--content">
                             <h3 className="skills--section--title">C#</h3>
@@ -72,10 +79,45 @@ export default function Skills() {
                     </div>
                     <div className="skills--section--card">
                         <div className="skills--section--img">
-                            <img src={sql} alt="Product Chain" width="100"/>
+                            <img src={sql} alt="Product Chain" width="75"/>
                         </div>
                         <div className="skills--section--card--content">
                             <h3 className="skills--section--title">SQL</h3>
+                        </div>
+                    </div>
+
+                    {/* Frameworks Below */}
+
+                    <div className="skills--section--card--framework">
+                        <div className="skills--section--img">
+                            <img src={react} alt="Product Chain" width="75"/>
+                        </div>
+                        <div className="skills--section--card--content">
+                            <h3 className="skills--section--title">React</h3>
+                        </div>
+                    </div>
+                    <div className="skills--section--card--framework">
+                        <div className="skills--section--img">
+                            <img src={redux} alt="Product Chain" width="75"/>
+                        </div>
+                        <div className="skills--section--card--content">
+                            <h3 className="skills--section--title">Redux</h3>
+                        </div>
+                    </div>
+                    <div className="skills--section--card--framework">
+                        <div className="skills--section--img">
+                            <img src={jquery} alt="Product Chain" width="75"/>
+                        </div>
+                        <div className="skills--section--card--content">
+                            <h3 className="skills--section--title">jQuery</h3>
+                        </div>
+                    </div>
+                    <div className="skills--section--card--framework">
+                        <div className="skills--section--img">
+                            <img src={bootstrap} alt="Product Chain" width="75"/>
+                        </div>
+                        <div className="skills--section--card--content">
+                            <h3 className="skills--section--title">Bootstrap</h3>
                         </div>
                     </div>
             </div>
