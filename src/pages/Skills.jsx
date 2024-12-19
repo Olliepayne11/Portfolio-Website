@@ -16,7 +16,8 @@ export default function Skills() {
     return (
         <section className="skills--section" id="skills">
             <div className="portfolio--container">
-                <p className="section--title">My Skills</p>
+                <p className="section--title">Skills</p>
+                <h1 className="skills--section--heading">Languages & Frameworks</h1>
             </div>
             <div className="skills--section--container">
 

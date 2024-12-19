@@ -37,7 +37,11 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div>
-        <img src={logo} alt="Logoipsum" width="50"/>
+        <Link to="heroSection"
+              offset={-70}
+              duration={500}
+              spy={true}
+              smooth={true}><img id="logo" src={logo} alt="Logoipsum" width="50"/></Link>
       </div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}

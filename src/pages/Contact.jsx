@@ -33,21 +33,26 @@ export default function Contact() {
 
     return (
         <section id="contact" className="contact--section">
+            <div className="portfolio--container--box">
+                <div className="portfolio--container">
+                    <p className="sub--title">Contact</p>
+                </div>
+            </div>
             <form className="contact--form--container" onSubmit={onSubmit}>
-                <h4>Contact Form</h4>
-                <div className="input-box">
-                    <label>Full Name</label>
+                <h4 className="skills--section--heading">Contact Me</h4>
+                <div className="contact--input">
+                    <label className="contact--label">Full Name</label>
                     <input type="text" className="field" placeholder="Enter your name" name="name" required></input>
                 </div>
-                <div className="input-box">
-                    <label>Email Address</label>
+                <div className="contact--input">
+                    <label className="contact--label">Email Address</label>
                     <input type="email" className="field" placeholder="Enter your email" name="email" required></input>
                 </div>
-                <div className="input-box">
-                    <label>Your Message</label>
+                <div className="contact--input">
+                    <label className="contact--label">Your Message</label>
                     <textarea name="message" className="field-message" placeholder="Enter your message" required></textarea>
                 </div>
-                <button type="submit">Send</button>
+                <button className="btn btn-github" type="submit">Send</button>
             </form>
         </section>
     )

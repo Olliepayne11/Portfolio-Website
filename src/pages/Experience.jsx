@@ -6,13 +6,13 @@ export default function Experience() {
             <div className="portfolio--container--box">
                 <div className="portfolio--container">
                     <p className="sub--title">Experience</p>
-                    <h2 className="sections--heading">My CV</h2>
+                    <h2 className="skills--section--heading">My CV</h2>
                 </div>
             </div>
             <div className="experience--section--container">
                 <div className="experience--section--card">
                     <div className="experience--section--card--img">
-                        <img src={cv} al="CV Image" width="200"/>
+                        <img src={cv} al="CV Image"/>
                     </div>
                 </div>
             </div>
