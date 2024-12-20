@@ -5,15 +5,15 @@ import project2 from '../assets/project-icon.png'
 export default function Portfolio() {
     return (
         <section id="portfolio" className="portfolio--section">
-            <div className="portfolio--container-box">
+            <div className="portfolio--container--box">
                 <div className="portfolio--container">
                     <p className="sub--title">Portfolio</p>
                     <h1 className="skills--section--heading">My Projects</h1>
                 </div>
-                <div>
-                    <button className="btn btn-github">
+                <div className="portfolio--github--div">
+                    <a href="https://github.com/Olliepayne11" target="_blank"><button className="btn btn-github">
                         Visit my github
-                    </button>
+                    </button></a>
                 </div>
             </div>
             <div className="portfolio--section--container">

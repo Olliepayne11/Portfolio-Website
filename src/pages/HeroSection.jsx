@@ -1,5 +1,6 @@
 import ollie from "../assets/Ollie2.jpeg"
 import { Link } from "react-scroll"
+import { motion } from "motion/react"
 
 export default function HeroSection() {
     return (
@@ -27,9 +28,12 @@ export default function HeroSection() {
                     </Link>
                 </div>
             </div>
-            <div className="hero--section--img">
+            <motion.div className="hero--section--img"
+                        animate={{scale: 1}}
+                        initial={{scale: 0}}
+                        transition={{type: 'tween', duration: 1, ease: 'easeInOut'}}>
                 <img src={ollie} alt="Hero Section"/>
-            </div>
+            </motion.div>
         </section>
     )
 }

@@ -52,7 +52,7 @@ export default function Contact() {
                     <label className="contact--label">Your Message</label>
                     <textarea name="message" className="field-message" placeholder="Enter your message" required></textarea>
                 </div>
-                <button className="btn btn-github" type="submit">Send</button>
+                <button className="btn btn-contact" type="submit">Send</button>
             </form>
         </section>
     )
