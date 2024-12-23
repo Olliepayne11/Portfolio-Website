@@ -16,7 +16,7 @@ export default function AboutMe() {
             </p>
             <p className="hero--section-description">
                 I find great joy in the creative and problem-solving elements of coding, using my expertise to develop a range of applications. 
-                Please see the portfolio section below to see the range of applications I have created.
+                Please see the portfolio section below to view the range of applications I have created.
             </p>
           </div>
         </div>

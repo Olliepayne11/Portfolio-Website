@@ -33,17 +33,6 @@ export default function Portfolio() {
                         </div>
                     </div>
                 </div>
-                <div className="portfolio--section--card">
-                    <div className="portfolio--section--img">
-                        <img src={project2} alt="Project 1 Image"/>
-                    </div>
-                    <div className="portfolio--section--card--content">
-                        <div>
-                            <h3 className="portfolio--section--title">Project 2</h3>
-                            <p className="text-md">Decription of second project.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     )

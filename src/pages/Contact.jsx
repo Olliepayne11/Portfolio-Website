@@ -41,15 +41,15 @@ export default function Contact() {
             <form className="contact--form--container" onSubmit={onSubmit}>
                 <h4 className="skills--section--heading">Contact Me</h4>
                 <div className="contact--input">
-                    <label className="contact--label">Full Name</label>
+                    <label className="contact--label"><b>Full Name</b></label>
                     <input type="text" className="field" placeholder="Enter your name" name="name" required></input>
                 </div>
                 <div className="contact--input">
-                    <label className="contact--label">Email Address</label>
+                    <label className="contact--label"><b>Email Address</b></label>
                     <input type="email" className="field" placeholder="Enter your email" name="email" required></input>
                 </div>
                 <div className="contact--input">
-                    <label className="contact--label">Your Message</label>
+                    <label className="contact--label"><b>Your Message</b></label>
                     <textarea name="message" className="field-message" placeholder="Enter your message" required></textarea>
                 </div>
                 <button className="btn btn-contact" type="submit">Send</button>

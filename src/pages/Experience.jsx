@@ -1,4 +1,4 @@
-import cv from '../assets/cv.png'
+import cv from '../assets/cv.webp'
 
 export default function Experience() {
     return (
@@ -12,7 +12,8 @@ export default function Experience() {
             <div className="experience--section--container">
                 <div className="experience--section--card">
                     <div className="experience--section--card--img">
-                        <img src={cv} al="CV Image"/>
+                    <img src={cv} alt="CV Logo"/>
+                    <button className="btn btn-primary">See My CV</button>
                     </div>
                 </div>
             </div>
