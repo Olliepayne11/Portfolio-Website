@@ -13,7 +13,7 @@ export default function Experience() {
                 <div className="experience--section--card">
                     <div className="experience--section--card--img">
                     <img src={cv} alt="CV Logo"/>
-                    <button className="btn btn-primary">See My CV</button>
+                    <a href="./src/CV.pdf" download><button className="btn btn-primary">Download My CV</button></a>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll'
-import earth from '../assets/earth-icon.png'
+import gazetteer from '../assets/Gazetteer-Screenshot.png'
 import project2 from '../assets/project-icon.png'
 
 export default function Portfolio() {
@@ -19,7 +19,7 @@ export default function Portfolio() {
             <div className="portfolio--section--container">
                 <div className="portfolio--section--card">
                     <div className="portfolio--section--img">
-                        <a href="https://gazetteerapp.oliverrpayne.co.uk/" target="_blank"><img src={earth} alt="Project 1 Image"/></a>
+                        <a href="https://gazetteerapp.oliverrpayne.co.uk/" target="_blank"><img id="gazetteer-image" className="rounded" src={gazetteer} alt="Project 1 Image"/></a>
                     </div>
                     <div className="portfolio--section--card--content">
                         <div>
