@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
-import logo from '../assets/website-logo.png'
+import logo from '../assets/favicon.ico'
 
 export default function Navbar() {
   const [navActive, setNavActive] = useState(false);
@@ -127,7 +127,7 @@ export default function Navbar() {
       </div>
       <Link
         onClick={closeMenu}
-        activeClass="navbar--active-content"
+        activeClass="navbar--active-content-contact"
         spy={true}
         smooth={true}
         offset={-70}
