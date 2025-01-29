@@ -1,22 +1,20 @@
 import cv from '../assets/cv.png'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileContract } from "@fortawesome/free-solid-svg-icons";
 
 export default function Experience() {
     return (
-        <section id="experience" className="experience--section">
-            <div className="portfolio--container--box">
-                <div className="portfolio--container">
-                    <p className="sub--title">Experience</p>
-                    <h2 className="skills--section--heading">My CV</h2>
-                </div>
-            </div>
-            <div className="experience--section--container">
-                <div className="experience--section--card">
-                    <div className="experience--section--card--img">
-                    <img id="cv-image" src={cv} alt="CV Logo"/>
-                    <a href="./src/CV.pdf" download><button className="btn btn-primary">Download My CV</button></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="AboutMe" className="about--section">
+        <div className="experience--section--img">
+          <FontAwesomeIcon icon={faFileContract} size="10x" color="#3D52A0"/>
+        </div>
+        <div className="hero--section--content--box about--section--box">
+          <div className="hero--section--content">
+            <p className="section--title">Experience</p>
+            <h1 className="skills--section--heading">My CV</h1>
+            <a href="./CV.pdf" download><button className="btn btn-primary">Download</button></a>
+          </div>
+        </div>
+      </section>
     )
 }
