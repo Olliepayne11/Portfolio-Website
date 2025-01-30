@@ -1,12 +1,10 @@
-import ollie from "../assets/Ollie2.jpeg"
-import aboutme from "../assets/aboutme.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard } from "@fortawesome/free-solid-svg-icons";
 
 export default function AboutMe() {
     return (
       <section id="AboutMe" className="about--section">
-        <div className="about--section--img">
+        <div id="aboutIcon" className="about--section--img">
           <FontAwesomeIcon icon={faAddressCard} size="10x" color="#3D52A0"/>
         </div>
         <div className="hero--section--content--box about--section--box">

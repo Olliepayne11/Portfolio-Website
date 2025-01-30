@@ -5,7 +5,7 @@ import logo from '../assets/favicon-footer.ico'
 import github from '../assets/GitHub.png'
 import linkedin from '../assets/linkedinlogo.png'
 import facebook from '../assets/facebook-logo.png'
-import instagram from '../assets/instagram.webp'
+import instagram from '../assets/instagram.png'
 
 function Footer() {
   return (

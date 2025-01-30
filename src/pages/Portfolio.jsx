@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll'
-import gazetteer from '../assets/Gazetteer-Screenshot.png'
+import gazetteer from '../assets/Gazetteer-Screenshot.jpg'
 import companyDirectory from '../assets/CompanyDirectory-Screenshot.png'
 
 export default function Portfolio() {
@@ -7,11 +7,11 @@ export default function Portfolio() {
         <section id="portfolio" className="portfolio--section">
             <div className="portfolio--container--box">
                 <div className="portfolio--container">
-                    <p className="sub--title">Portfolio</p>
+                    <p className="section--title">Portfolio</p>
                     <h1 className="skills--section--heading">My Projects</h1>
                 </div>
                 <div className="portfolio--github--div">
-                    <a href="https://github.com/Olliepayne11" target="_blank"><button className="btn btn-github">
+                    <a href="https://github.com/Olliepayne11" target="_blank"><button className="btn btn-contact">
                         Visit my github
                     </button></a>
                 </div>
@@ -26,10 +26,13 @@ export default function Portfolio() {
                             <h3 className="portfolio--section--title">Gazetteer</h3>
                             <br></br>
                             <p className="text-md"><b>Gazetteer</b> is a web app designed to work across mobile & desktop devices.
-                                                     The app allows users to choose any country in the world, to which specific data will be shown in the form of modals, as well as individual markers on the map.
-                                                     Examples of data included are: <b>Weather Forecast, Local News, Country Population, Capital City, Airports, Earthquakes etc. </b>
-                                                     Information shown on the UI is gathered through API requests using AJAX calls to PHP routines, utilising cURL to retrieve this information.
-                                                     Then the formatted JSON response data is used to display a variety of information to the user.</p>
+                                                     The app allows users to choose any country, to discover relevant information, such as: <b>Weather Forecast, Local News, Population, Capital City, Airports, Earthquakes etc. </b></p><br></br>
+                            <p className="text-md">The tech stack I utilised for this application:</p>
+                            <ul id="projectList" className="text-md">
+                                <li><b>HTML & CSS (Bootstrap 5 Framework)</b></li>
+                                <li><b>Javascript (AJAX, jQuery, Leafletjs)</b></li>
+                                <li><b>PHP</b></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -41,10 +44,16 @@ export default function Portfolio() {
                         <div>
                             <h3 className="portfolio--section--title">Company Directory</h3>
                             <br></br>
-                            <p className="text-md"><b>Company Directory</b> is an application that allows the user to manipulate a database which holds information, such as the employees, departments and locations of a company.
-                                                      Any changes to the database which are requested through the UI follow the rules of CRUD operations, meaning that the data management is efficient and user-friendly.
-                                                      For the application to be able to run these processes, I used a series of AJAX calls to PHP routines which included SQL queries to manipulate the database.
-                                                      I then included some popups to notify the user that the database has been updated.</p>
+                            <p className="text-md"><b>Company Directory</b> is an application designed to allow users to manipulate a database, following the rules of CRUD operations.
+                                                      Information is displayed in the form of modals, to which the user can add, update, filter or remove data.</p>
+                            <br></br>
+                            <p className="text-md">The tech stack I utilised for this application:</p>
+                            <ul id="projectList" className="text-md">
+                                <li><b>HTML & CSS (Bootstrap 5 Framework)</b></li>
+                                <li><b>Javascript (AJAX, jQuery)</b></li>
+                                <li><b>PHP</b></li>
+                                <li><b>SQL</b></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

@@ -35,7 +35,7 @@ export default function Contact() {
         <section id="contact" className="contact--section">
             <div className="portfolio--container--box">
                 <div className="portfolio--container">
-                    <p className="sub--title">Contact</p>
+                    <p className="section--title">Contact</p>
                 </div>
             </div>
             <form className="contact--form--container" onSubmit={onSubmit}>

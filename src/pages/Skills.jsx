@@ -1,16 +1,16 @@
-import html from '../assets/HTML-logo.png'
-import css from '../assets/css-logo.png'
-import javascript from '../assets/javascript-logo.png'
-import php from '../assets/PHP-logo.png'
-import java from '../assets/java-logo.png'
-import python from '../assets/python-logo.png'
-import csharp from '../assets/csharp-logo.png'
-import sql from '../assets/sql-logo.png'
+import html from '../assets/HTML-logo.jpg'
+import css from '../assets/css-logo.jpg'
+import javascript from '../assets/javascript-logo.jpg'
+import php from '../assets/PHP-logo.jpg'
+import java from '../assets/java-logo.jpg'
+import python from '../assets/python-logo.jpg'
+import csharp from '../assets/csharp-logo.jpg'
+import sql from '../assets/sql-logo.jpg'
 
-import react from '../assets/react-logo.png'
-import redux from '../assets/redux-icon.png'
+import react from '../assets/react-logo.jpg'
+import redux from '../assets/redux-icon.jpg'
 import jquery from '../assets/jquery-logo.webp'
-import bootstrap from '../assets/bootstrap-logo.png'
+import bootstrap from '../assets/bootstrap-logo.jpg'
 
 export default function Skills() {
     return (
