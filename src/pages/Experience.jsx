@@ -8,7 +8,7 @@ export default function Experience() {
           <div className="hero--section--content">
             <p className="section--title">Experience</p>
             <h1 className="skills--section--heading">Summary</h1>
-            <p className="text-lg">Creative, proactive and hard-working individual, with over 5 years experience in Marketing. Enjoys the problem-solving aspects of the role. Polite and professional communication with team members and clients within a dynamic and flexible environment. Organised and detail conscious; can be relied upon to complete any task to a high standard.
+            <p id="summaryText" className="text-lg">Creative, proactive and hard-working individual, with over 5 years experience in Marketing. Enjoys the problem-solving aspects of the role. Polite and professional communication with team members and clients within a dynamic and flexible environment. Organised and detail conscious; can be relied upon to complete any task to a high standard.
             </p>
             <h1 className="skills--section--heading">Education</h1>
             <ul id="educationList" className="text-md">

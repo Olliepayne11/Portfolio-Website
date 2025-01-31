@@ -29,9 +29,9 @@ export default function Portfolio() {
                                                      The app allows users to choose any country, to discover relevant information, such as: <b>Weather Forecast, Local News, Population, Capital City, Airports, Earthquakes etc. </b></p><br></br>
                             <p className="text-md">The tech stack I utilised for this application:</p>
                             <ul id="projectList" className="text-md">
-                                <li><b>HTML & CSS (Bootstrap 5 Framework)</b></li>
-                                <li><b>Javascript (AJAX, jQuery, Leafletjs)</b></li>
-                                <li><b>PHP</b></li>
+                                <li id="projectListItem"><b>HTML & CSS (Bootstrap 5 Framework)</b></li>
+                                <li id="projectListItem"><b>Javascript (AJAX, jQuery, Leafletjs)</b></li>
+                                <li id="projectListItem"><b>PHP</b></li>
                             </ul>
                         </div>
                     </div>
@@ -49,10 +49,10 @@ export default function Portfolio() {
                             <br></br>
                             <p className="text-md">The tech stack I utilised for this application:</p>
                             <ul id="projectList" className="text-md">
-                                <li><b>HTML & CSS (Bootstrap 5 Framework)</b></li>
-                                <li><b>Javascript (AJAX, jQuery)</b></li>
-                                <li><b>PHP</b></li>
-                                <li><b>SQL</b></li>
+                                <li id="projectListItem"><b>HTML & CSS (Bootstrap 5 Framework)</b></li>
+                                <li id="projectListItem"><b>Javascript (AJAX, jQuery)</b></li>
+                                <li id="projectListItem"><b>PHP</b></li>
+                                <li id="projectListItem"><b>SQL</b></li>
                             </ul>
                         </div>
                     </div>

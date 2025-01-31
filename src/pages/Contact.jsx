@@ -24,6 +24,10 @@ export default function Contact() {
           title: "Success!",
           text: "Message has been sent",
           icon: "success",
+          iconColor: "#00CEC8",
+          confirmButtonColor: "#00CEC8",
+          color: 'white',
+          background: '#050A44'
         });
       } else {
         console.log("Error", data);
@@ -41,16 +45,16 @@ export default function Contact() {
             <form className="contact--form--container" onSubmit={onSubmit}>
                 <h4 className="skills--section--heading">Contact Me</h4>
                 <div className="contact--input">
-                    <label className="contact--label"><b>Full Name</b></label>
-                    <input type="text" className="field" placeholder="Enter your name" name="name" required></input>
+                    <label for="nameInput" className="contact--label form-label"><b>Full Name</b></label>
+                    <input id="nameInput" type="text" className="field form-control" placeholder="Enter your name" name="name" required></input>
                 </div>
                 <div className="contact--input">
-                    <label className="contact--label"><b>Email Address</b></label>
-                    <input type="email" className="field" placeholder="Enter your email" name="email" required></input>
+                    <label for="emailInput" className="contact--label form-label"><b>Email Address</b></label>
+                    <input id="emailInput" type="email" className="field form-control" placeholder="Enter your email" name="email" required></input>
                 </div>
                 <div className="contact--input">
-                    <label className="contact--label"><b>Your Message</b></label>
-                    <textarea name="message" className="field-message" placeholder="Enter your message" required></textarea>
+                    <label for="textInput" className="contact--label form-label"><b>Your Message</b></label>
+                    <textarea id="textInput" name="message" className="field-message form-control" placeholder="Enter your message" required></textarea>
                 </div>
                 <button className="btn btn-contact" type="submit">Send</button>
             </form>

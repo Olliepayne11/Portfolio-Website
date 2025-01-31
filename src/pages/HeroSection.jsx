@@ -10,11 +10,10 @@ export default function HeroSection() {
                     <p className="section--title">I'm Ollie,</p>
                     <h1 className="hero--section--title">
                         <span className="hero--section--title--color">Full Stack</span>{" "}
-                        <br />
-                        Developer
+                        <span className="hero--section--title--dark">Developer</span>{" "}
                     </h1>
                     <p className="hero--section-description">
-                        Welcome to my page.
+                        Welcome to my page
                     </p>
                     <Link
                         spy={true}

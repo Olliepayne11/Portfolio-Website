@@ -153,7 +153,7 @@ body {
   .section--title {
     color: var(--heading-color);
     font-size: 21px;
-    text-align: center;
+    text-align: left;
     font-style: normal;
     font-weight: 600;
     line-height: 32px;
@@ -252,9 +252,16 @@ body {
     font-weight: 700;
     line-height: 90px;
     align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
   }
   .hero--section--title--color {
     color: var(--primary);
+  }
+  .hero--section--title--dark {
+    color: var(--darkblue);
   }
   .hero--section-description {
     color: var(--darkblue);
@@ -486,7 +493,7 @@ body {
     gap: 30px;
   }
   .contact--form--container {
-    width: 60%;
+    width: 80%;
     height: 100%;
     align-self: center;
     text-align: center;
@@ -500,14 +507,15 @@ body {
   }
   .contact--input {
     align-self: center;
-    width: 40%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 50px;
   }
   .contact--label {
-    width: 30%;
+    width: 50%;
+    text-align: right;
   }
   .field, .field-message {
     width: 70%;
@@ -610,20 +618,36 @@ body {
       display: none;
     }
     .hero--section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 133.333px 85.333px 133.333px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      background-color: var(--bg-shade);
+    }
+    .hero--section--content-box {
       display: flex;
-      flex-direction: column-reverse;
-      padding-bottom: 70px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+    }
+    .section--title {
+      text-align: left;
     }
     .hero--section--title,
     .hero--section-description,
     .footer--content {
-      text-align: center;
+      text-align: left;
       font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
     .skills--section--container,
     .footer--content--container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
     .footer--image--container {
       margin-left: -70px;
@@ -645,10 +669,9 @@ body {
       padding-bottom: 70px;
     }
     .skills--section,
-    .portfolio--container,
-    .hero--section--content,
-    .hero--section--content--box {
-      align-items: center;
+    .portfolio--container {
+      align-items: flex-start;
+      text-align: left;
     }
     .portfolio--section {
       padding-top: 70px;
@@ -658,11 +681,11 @@ body {
       gap: 30px;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
     }
     .portfolio--section--card {
-      width: 90vw;
+      width: 100%;
       height: auto;
       display: flex;
       flex-direction: column;
@@ -681,15 +704,17 @@ body {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      text-align: center;
+      text-align: left;
     }
     .skills--section,
     .testimonial--section,
-    .contact--section,
     .footer--container {
       gap: 20px;
       padding-top: 70px;
       padding-bottom: 70px;
+    }
+    .contact--section {
+      padding: 70px 100px 70px 100px;
     }
     #aboutIcon {
       display: none;
@@ -699,7 +724,7 @@ body {
       display: flex;
       flex-direction: column;
       text-align: center;
-      padding: 70px 20px 70px 20px;
+      padding: 70px 100px 70px 100px;
     }
     .testimonial--section--card {
       padding: 25px;
@@ -729,17 +754,23 @@ body {
       align-items: center;
       gap: 10px;
     }
+    #summaryText {
+      text-align: left;
+    }
     #workExperience {
       flex-direction: column;
+      align-items: center;
+      width: 100%;
     }
     .workExperienceDiv {
       width: 100%;
+      text-align: left;
     }
     .workExperienceList {
       text-align: left;
     }
     #educationList {
-      text-align: left;;
+      text-align: left;
     }
     #download-button-img {
       display: none;
@@ -748,13 +779,16 @@ body {
       display: block;
     }
     .contact--form--container {
-      width: 95vw;
+      width: 100%;
       gap: 30px;
     }
     .contact--input {
       width: 100%;
       display: flex;
       justify-content: space-around;
+    }
+    .contact--label {
+      width: 50%;
     }
     .container {
       display: flex;
@@ -844,6 +878,185 @@ body {
   
     .nav__hamburger.active :nth-child(3) {
       transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .btn-outline-primary {
+      display: none;
+    }
+    .hero--section {
+      display: flex;
+      flex-direction: column-reverse;
+      padding-bottom: 70px;
+    }
+    .hero--section--title,
+    .hero--section-description,
+    .footer--content {
+      text-align: center;
+      font-size: 18px;
+      align-items: center;
+    }
+    .skills--section--container,
+    .footer--content--container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .footer--image--container {
+      margin-left: -70px;
+    }
+    .portfolio--section--container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .portfolio--section--img > img {
+      width: 50%;
+      height: 100%;
+    }
+    #projectList {
+      text-align: left;
+    }
+    .skills--section {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    .skills--section,
+    .portfolio--container,
+    .hero--section--content,
+    .hero--section--content--box {
+      align-items: center;
+    }
+    .portfolio--section {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    .portfolio--container--box {
+      gap: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .portfolio--section--card {
+      width: 90vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      padding: 50px 20px 50px 20px;
+      flex: 1 0 0;
+      background: #fff;
+      box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+    .portfolio--section--card--content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .skills--section,
+    .testimonial--section,
+    .contact--section,
+    .footer--container {
+      gap: 20px;
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    #aboutIcon {
+      display: none;
+    }
+    .about--section {
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 70px 20px 70px 20px;
+    }
+    .testimonial--section--card {
+      padding: 25px;
+    }
+    .hero--section--title,
+    .skills--section--heading,
+    .sections--heading {
+      font-size: 35px;
+      line-height: 40px;
+      text-align: center;
+    }
+    .hero--section--content--box {
+      gap: 10px;
+    }
+    .experience--section {
+      text-align: center;
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    #cvIcon {
+      display: none;
+    }
+    .experience--section--img {
+      display: flex;
+      flex-direction: column;
+      justify-content: space;
+      align-items: center;
+      gap: 10px;
+    }
+    #summaryText {
+      text-align: center;
+    }
+    #workExperience {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .workExperienceDiv {
+      width: 100%;
+      text-align: center;
+    }
+    .workExperienceList {
+      text-align: left;
+    }
+    #educationList {
+      text-align: left;
+    }
+    #projectList {
+      width: 100%;
+      text-align: center;
+      margin-left: -20px;
+    }
+    #projectListItem {
+      list-style-type: none;
+    }
+    #download-button-img {
+      display: none;
+    }
+    #download-button-content {
+      display: block;
+    }
+    .contact--form--container {
+      width: 95vw;
+      gap: 30px;
+    }
+    .contact--input {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer--items {
+      right: 0px;
+    }
+    .divider {
+      margin: 20px;
     }
   }
   
