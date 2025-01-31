@@ -123,6 +123,21 @@ export default function Navbar() {
               Experience
             </Link>
           </li>
+          <li>
+            <Link
+              id="contactMenu"
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="contact"
+              className="navbar--content"
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
       <Link

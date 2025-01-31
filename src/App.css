@@ -219,6 +219,9 @@ body {
   .navbar--active-content-contact {
     color: var(--darkblue);
   }
+  #contactMenu {
+    display: none;
+  }
   /* Navbar Styler Ends */
   
   /* Hero Section Style */
@@ -826,6 +829,9 @@ body {
   }
   
   @media screen and (max-width: 1200px) {
+    #contactMenu {
+      display: block;
+    }
     .nav__hamburger {
       top: 29px;
       display: flex;
