@@ -8,8 +8,11 @@ export default function Experience() {
           <div className="hero--section--content">
             <p className="section--title">Experience</p>
             <h1 className="skills--section--heading">Summary</h1>
-            <p id="summaryText" className="text-lg">Creative, proactive and hard-working individual, with over 5 years experience in Marketing. Enjoys the problem-solving aspects of the role. Polite and professional communication with team members and clients within a dynamic and flexible environment. Organised and detail conscious; can be relied upon to complete any task to a high standard.
-            </p>
+            <p id="summaryText" className="text-lg">Coming from a strong background as an Executive for various job roles, I am now looking to re-establish myself as a developer. 
+                                                    Programming is an area that I have always been interested in and I am now taking the opportunity to explore it as a serious career. 
+                                                    To facilitate this change, I recently graduated from a coding Traineeship as a full stack developer including completing 2 real-world projects successfully to specification using a wide range of programming languages. 
+                                                    Throughout my career to date, I have gained excellent communication, organisation and interpersonal skills, which I hope to apply alongside my technical skills in a new and challenging role in development. 
+                                                    I am eager to gain commercial experience in the industry as I see myself working as a developer for the long term.</p>
             <h1 className="skills--section--heading">Education</h1>
             <ul id="educationList" className="text-md">
               <li>Digital Marketing Level 3 <b>(2020)</b></li>
